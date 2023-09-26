@@ -6,8 +6,9 @@ int rem,sum=0,temp;
 temp=x;
 
 while(x>0){
-rem = x%10;
-sum = (sum * 10)+rem;
+// rem = x%10;
+// sum = (sum * 10)+rem;
+sum = (sum * 10)+(x%10);
 x=x/10;
 }
 
@@ -23,6 +24,6 @@ return op;
 public class PalindromeLeetCode {
     public static void main(String[] args) {
         Solution s= new Solution();
-        System.out.println(s.isPalindrome(-121));
+        System.out.println(s.isPalindrome(12321));
     }
 }
