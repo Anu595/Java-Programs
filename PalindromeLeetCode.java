@@ -1,7 +1,7 @@
 class Solution{
 
     public boolean isPalindrome(int x){
-boolean op=false;
+// boolean op=false;
 int rem,sum=0,temp;
 temp=x;
 
@@ -12,11 +12,11 @@ sum = (sum * 10)+(x%10);
 x=x/10;
 }
 
-if(temp==sum) {op=true;}
+// if(temp==sum) {op=true;}
 
-else {op=false;}
+// else {op=false;}
         
-return op;  
+return temp==sum;  
 }
 }
 
@@ -24,6 +24,6 @@ return op;
 public class PalindromeLeetCode {
     public static void main(String[] args) {
         Solution s= new Solution();
-        System.out.println(s.isPalindrome(12321));
+        System.out.println(s.isPalindrome(-121));
     }
 }

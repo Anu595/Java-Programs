@@ -31,6 +31,8 @@ public class StackDsa {
          System.out.println(stack);//[Minecraft, Counterstrike, age of empires, Minecraft]
          System.out.println(stack.search("Minecraft"));//1
 
+         
+
 
     }
 }
